@@ -51,4 +51,7 @@ def main():
     
 if __name__=="__main__":
     main()
+    print("################## MAID v1.0 #####################")
+    print("Created by Syafiq A.U. - abdillah.syafiq@gmail.com")
+    print("##################################################")
     inp = input("Successfully moving files. Press ENTER to exit ")
