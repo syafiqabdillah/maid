@@ -28,7 +28,7 @@ def main():
         
     # moving files
     for filename in os.listdir(cwd):    
-        if filename.endswith(".jpg") or filename.endswith(".png"):
+        if filename.endswith(".jpg") or filename.endswith(".png") or filename.endswith(".webp"):
             current = os.path.join(cwd, filename)
             destination = os.path.join(cwd, "[Maid]-Pictures", filename)
             move(current, destination)
@@ -44,14 +44,10 @@ def main():
             current = os.path.join(cwd, filename)
             destination = os.path.join(cwd, "[Maid]-Compressed", filename)
             move(current, destination)
-        elif filename.endswith(".exe"):
+        elif filename.endswith(".exe") or filename.endswith(".msi"):
             current = os.path.join(cwd, filename)
             destination = os.path.join(cwd, "[Maid]-Programs", filename)
             move(current, destination)
     
 if __name__=="__main__":
     main()
-    print("################## MAID v1.0 #####################")
-    print("Created by Syafiq A.U. - abdillah.syafiq@gmail.com")
-    print("##################################################")
-    inp = input("Successfully moving files. Press ENTER to exit ")
